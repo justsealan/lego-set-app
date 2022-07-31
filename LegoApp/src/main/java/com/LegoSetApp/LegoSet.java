@@ -2,81 +2,54 @@ package com.LegoSetApp;
 
 public class LegoSet {
 
-    //fields
+   //fields
     private String number;
     private String name;
     private String theme;
-    private String ages;
+    private String age;
     private int pieces;
-    private double recommendedRetailPrice;
+    private double retail;
 
     //constructor
-    public LegoSet(String number, String name, String theme, String ages, int pieces, double recommendedRetailPrice) {
+    public LegoSet(String number, String name, String theme, String age, int pieces, double retail) {
         this.number = number;
         this.name = name;
         this.theme = theme;
-        this.ages = ages;
+        this.age = age;
         this.pieces = pieces;
-        this.recommendedRetailPrice = recommendedRetailPrice;
+        this.retail = retail;
     }
 
-    public LegoSet() {
-
-    }
-
-    //getters and setters
+    //getters
     public String getNumber() {
         return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getTheme() {
         return theme;
     }
 
-    public void setTheme(String theme) {
-        this.theme = theme;
-    }
-
-    public String getAges() {
-        return ages;
-    }
-
-    public void setAges(String ages) {
-        this.ages = ages;
+    public String getAge() {
+        return age;
     }
 
     public int getPieces() {
         return pieces;
     }
 
-    public void setPieces(int pieces) {
-        this.pieces = pieces;
+    public double getRetail() {
+        return retail;
     }
 
-    public double getRecommendedRetailPrice() {
-        return recommendedRetailPrice;
-    }
-
-    public void setRecommendedRetailPrice(double recommendedRetailPrice) {
-        this.recommendedRetailPrice = recommendedRetailPrice;
-    }
 
     //toString
-    @Override
-    public String toString() {
-        return "LegoSet [number=" + number + ", name=" + name + ", theme=" + theme + ", ages=" + ages + ", pieces="
-                + pieces + ", recommendedRetailPrice=" + recommendedRetailPrice + "]";
-    }
+    // @Override
+    // public String toString() {
+    //     return "LegoSet [number=" + number + ", name=" + name + ", theme=" + theme + ", ages=" + ages + ", pieces="
+    //             + pieces + ", recommendedRetailPrice=" + recommendedRetailPrice + "]";
+    // }
 }
